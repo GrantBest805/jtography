@@ -1,14 +1,11 @@
 {
-  "name": "gatsby-starter-prologue",
+  "name": "jTography",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Prologue by HTML5 UP",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-prologue.git"
-  },
+  "description": "Jtography Portfolio",
+  "repository": '',
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "grant best",
+    "email": ""
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -31,11 +28,11 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "build": "npm run clean && gatsby build",
-    "deploy": "npm run clean && gatsby build",
+    "build": "gatsby build",
+    "deploy": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "rimraf .cache public",
-    "format": "prettier --write '**/*.js'",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
