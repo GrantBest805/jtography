@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-export default function Footer({ title, heading }) {
+export default function Header({ title, heading }) {
   return (
     <div id="logo">
       <Link to="/">
