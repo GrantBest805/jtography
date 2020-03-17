@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: 'Jtography', // <title>
   manifestName: 'Prologue',
   manifestShortName: 'Landing', // max 12 characters
-  manifestStartUrl: '/',
+  // manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
