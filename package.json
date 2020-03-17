@@ -1,13 +1,13 @@
 {
-  "name": "gatsby-starter-prologue",
+  "name": "Jtography",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Prologue by HTML5 UP",
+  "description": "Jtography Portfolio",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-prologue.git"
+    "url": "git+https://github.com/GrantBest805/jtography"
   },
   "author": {
-    "name": "Anubhav Srivastava",
+    "name": "Grant Best",
     "email": "anubhav.srivastava00@gmail.com"
   },
   "dependencies": {
@@ -31,12 +31,11 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "build": "npm run clean && gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "rimraf .cache public",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "gatsby clean",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
@@ -48,9 +47,5 @@
     "gatsby-starter",
     "gatsby-starter-prologue"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-prologue/issues"
-  },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-prologue#readme"
+  "license": "MIT"
 }

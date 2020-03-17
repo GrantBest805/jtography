@@ -1,9 +1,12 @@
 const config = require('./config');
 
 module.exports = {
-  pathPrefix: config.pathPrefix,
+  // pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
+    description: `Jtography Portfolio`,
+    siteUrl: 'https://confident-montalcini-a07092.netlify.com/',
+    author: `Grant Best`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
