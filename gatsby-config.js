@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     description: `Jtography Portfolio`,
-    siteUrl: 'https://confident-montalcini-a07092.netlify.com/',
+    siteUrl: 'https://gifted-murdock-5495de.netlify.com/',
     author: `Grant Best`,
   },
   plugins: [
