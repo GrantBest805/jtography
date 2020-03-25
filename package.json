@@ -12,7 +12,7 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "gatsby": "^2.4.3",
-    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-manifest": "^2.3.2",
     "gatsby-plugin-netlify": "^2.1.35",
     "gatsby-plugin-offline": "^2.1.0",
     "gatsby-plugin-react-helmet": "^3.0.12",
@@ -27,6 +27,7 @@
     "react-tilt": "^0.1.4",
     "react-visibility-sensor": "^5.1.1",
     "smoothscroll-polyfill": "^0.4.4",
+    "typescript": "^3.8.3",
     "uuid": "^7.0.0"
   },
   "scripts": {

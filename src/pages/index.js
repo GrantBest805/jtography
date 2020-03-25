@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
-import SideBar from '../components/SideBar';
+import SideBar from '../components/Sidebar/index';
 import { FaArrowDown } from 'react-icons/fa';
 import Card from '../components/shared/Card';
 import ContactForm from '../components/shared/ContactForm';

@@ -881,9 +881,7 @@ button,
 
     &.one {
       background-color: #81918e;
-      background-image: linear-gradient(to right bottom,
-          rgba(162, 168, 164, 0.8),
-          rgba(90, 177, 199, 0.8)),
+      background-image: linear-gradient(to bottom right, #bec0c2c7, #17405ec0),
         url('../images/dog-ocean.jpg');
       background-size: cover;
       background-position: top;
