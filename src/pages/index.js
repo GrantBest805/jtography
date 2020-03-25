@@ -37,7 +37,7 @@ const IndexPage = () => {
                 <br />
                 Photographer & Videographer
               </h2>
-              <p>Check Out My Resent Work!</p>
+              <p>Check Out My Recent Work!</p>
             </header>
 
             <footer>

@@ -13,22 +13,13 @@ module.exports = {
     {
       icon: 'fa-instagram',
       name: 'Instagram',
-      url: 'https://instagram.com',
+      url: 'https://www.instagram.com/jtographymedia/',
     },
-    {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com',
-    },
-    {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com',
-    },
+
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:grantstoolbox@gmail.com',
+      url: 'mailto:jimmyvega33@gmail.com',
     },
   ],
 };
