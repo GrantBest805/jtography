@@ -259,11 +259,29 @@ h2 {
   font-size: 2em;
   letter-spacing: -1px;
 
+  .heading-primary-main {
+    color: white !important;
+
+
+
+  }
+
+  .heading-primary-main-2 {
+    color: white !important;
+
+  }
+
   &.alt {
-    color: #888;
+    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
 
     strong {
+      font-size: larger;
       color: #666;
+
     }
   }
 }
@@ -881,8 +899,8 @@ button,
 
     &.one {
       background-color: #81918e;
-      background-image: linear-gradient(to bottom right, #bec0c2c7, #17405ec0),
-        url('../images/dog-ocean.jpg');
+      background-image: linear-gradient(to bottom right, #bec0c29d, #17405ea1),
+        url('../images/la-long-ex-v2.jpg');
       background-size: cover;
       background-position: top;
     }
@@ -1284,4 +1302,48 @@ button,
 
 .arrow-icon {
   height: 40px;
+}
+
+
+
+.heading-primary-sub {
+  color: white !important;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+// animations 
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

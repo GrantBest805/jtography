@@ -33,11 +33,15 @@ const IndexPage = () => {
           <div className="container">
             <header>
               <h2 className="alt">
-                Hi! I'm <strong>Jimmy</strong>
+                <span className="heading-primary-main">
+                  Hi! I'm <strong>Jimmy </strong>{' '}
+                </span>
                 <br />
-                Photographer & Videographer
+                <span className="heading-primary-main-2">
+                  Photographer & Videographer
+                </span>
               </h2>
-              <p>Check Out My Recent Work!</p>
+              <p className="heading-primary-sub">Check Out My Recent Work!</p>
             </header>
 
             <footer>
@@ -70,13 +74,13 @@ const IndexPage = () => {
               </div>
 
               <div className="col-4 col-12-mobile">
-                <Card category="Videos" img={nightCity} delay="300" />
-                <Card category="something" img={dog} delay="300" />
+                <Card category="Videos" img={nightCity} delay={300} />
+                <Card category="something" img={dog} delay={300} />
               </div>
 
               <div className="col-4 col-12-mobile">
-                <Card category="------" img={yFlower} delay="600" />
-                <Card category="------" img={bridge1} delay="600" />
+                <Card category="------" img={yFlower} delay={600} />
+                <Card category="------" img={bridge1} delay={600} />
               </div>
             </div>
           </div>
