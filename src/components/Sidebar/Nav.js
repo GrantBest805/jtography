@@ -2,7 +2,7 @@ import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from '../Scroll';
 
-export default function Nav({ sections = [] }) {
+export default function Nav({ sections = [], toggleHeader }) {
   return (
     <nav id="nav">
       <ul>
@@ -13,7 +13,7 @@ export default function Nav({ sections = [] }) {
         >
           {sections.map(s => {
             return (
-              <li key={s.id}>
+              <li key={s.id} onClick={toggleHeader}>
                 <Scroll type="id" element={s.id}>
                   <a href={`#${s.id}`} id="top-link">
                     <span className={`icon ${s.icon}`}>{s.name}</span>

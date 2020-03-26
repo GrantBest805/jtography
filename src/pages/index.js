@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
@@ -16,6 +16,8 @@ import bridge1 from '../assets/images/bridge1.jpg';
 import pic8 from '../assets/images/jimmy1.png';
 import Scroll from '../components/Scroll';
 
+import { SideBarContext } from '../context/sidebarContext';
+
 const sections = [
   { id: 'top', name: 'Intro', icon: 'fa-home' },
   { id: 'portfolio', name: 'Portfolio', icon: 'fa-th' },
@@ -24,9 +26,22 @@ const sections = [
 ];
 
 const IndexPage = () => {
+  const [isHeaderOpen, toggleHeader] = useState(false);
+
+  const setToggleHeader = useCallback(() => {
+    toggleHeader(!isHeaderOpen);
+  });
+
   return (
     <Layout>
-      <SideBar sections={sections} />
+      <SideBarContext.Provider
+        value={{
+          setToggleHeader,
+          isHeaderOpen,
+        }}
+      >
+        <SideBar sections={sections} />
+      </SideBarContext.Provider>
 
       <div id="main">
         <section id="top" className="one dark cover">
