@@ -6,7 +6,7 @@ export default function Header({ title, heading }) {
     <div id="logo">
       <Link to="/">
         <span>
-          <h1>Jtography</h1>
+          <h1>Jtography Media</h1>
         </span>
       </Link>
     </div>

@@ -9,14 +9,10 @@ const ContactForm = props => {
         </header>
 
         <p>
-          I'm baby banjo hexagon messenger bag, tacos art party stumptown austin
-          keffiyeh 90's pitchfork subway tile la croix. 8-bit typewriter kitsch
-          selvage messenger bag plaid trust fund venmo hexagon semiotics irony
-          tacos pinterest pabst. Twee tumblr la croix, hashtag salvia cray
-          glossier shoreditch 90's food truck. Chia cloud bread YOLO,
-          thundercats viral iPhone swag gochujang la croix forage. Vaporware
-          mlkshk locavore organic. Artisan la croix cronut, hashtag poutine cray
-          selfies heirloom.
+          If you’d like to work together for a wedding, engagement, graduation
+          portraits, business promo video or just about anything, please send me
+          an email and I’ll respond as promptly as possible. All photos are
+          available for digital download or physical prints.
         </p>
         <form method="post" action="#">
           <div className="row">

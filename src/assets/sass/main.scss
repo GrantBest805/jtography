@@ -259,23 +259,21 @@ h2 {
   font-size: 2em;
   letter-spacing: -1px;
 
+
   .heading-primary-main {
     color: white !important;
-
-
-
   }
 
   .heading-primary-main-2 {
     color: white !important;
-
   }
 
   &.alt {
-    text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
     animation-name: moveInLeft;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+    font-weight: 500;
+    white-space: pre-line;
 
 
     strong {
@@ -1302,13 +1300,18 @@ button,
 
 .arrow-icon {
   height: 40px;
+  color: white !important;
+
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 
 
 .heading-primary-sub {
   color: white !important;
-  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+  font-weight: 700;
   animation-name: moveInRight;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -1345,5 +1348,30 @@ button,
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
   }
 }

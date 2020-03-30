@@ -30,7 +30,7 @@ const IndexPage = () => {
 
   const setToggleHeader = useCallback(() => {
     toggleHeader(!isHeaderOpen);
-  });
+  }, [isHeaderOpen, toggleHeader]);
 
   return (
     <Layout>
@@ -48,22 +48,22 @@ const IndexPage = () => {
           <div className="container">
             <header>
               <h2 className="alt">
-                <span className="heading-primary-main">
-                  Hi! I'm <strong>Jimmy </strong>{' '}
-                </span>
+                <span className="heading-primary-main">Jtography Media</span>{' '}
                 <br />
                 <span className="heading-primary-main-2">
-                  Photographer & Videographer
+                  Photography & Video Production
                 </span>
               </h2>
-              <p className="heading-primary-sub">Check Out My Recent Work!</p>
+              {/* <p className="heading-primary-sub">Check Out My Recent Work!</p> */}
             </header>
 
             <footer>
               <Scroll type="id" element={'portfolio'}>
-                <span className="arrow-icon">
-                  <FaArrowDown />
-                </span>
+                <div className="arrow-icon bounce">
+                  <span>
+                    <FaArrowDown />
+                  </span>
+                </div>
               </Scroll>
             </footer>
           </div>
@@ -76,10 +76,9 @@ const IndexPage = () => {
             </header>
 
             <p>
-              Live-edge hot chicken cardigan ramps, pickled hell of tote bag
-              craft beer neutra iPhone whatever thundercats pop-up. Small batch
-              helvetica pour-over swag. Slow-carb iPhone offal chia. Palo santo
-              drinking vinegar lumbersexual cloud bread.
+              Please enjoy a look into my ever expanding portfolio. All of these
+              photos are available for digital download or physical prints. Feel
+              free to contact me for further pricing and details.
             </p>
 
             <div className="row">
@@ -111,10 +110,17 @@ const IndexPage = () => {
                 <img src={pic8} alt="" />
               </a>
               <p style={{ display: 'block' }}>
-                Organic keytar tumblr keffiyeh. Knausgaard vinyl 3 wolf moon
-                butcher franzen, you probably haven't heard of them master
-                cleanse thundercats cred sriracha mumblecore meditation
-                intelligentsia subway tile marfa.
+                You could classify me as a “big picture” kinda guy...pun
+                intended. I like to take in the full scene and observe from a
+                distance. I guess thats why I’m drawn to landscape and city
+                scape photography. But that’s not to say I don’t appreciate and
+                love the details in life. Having started in this passion in the
+                days of actual film, ive learned to be very selective and
+                precise with my shooting. Photography has been a life long hobby
+                that has turned into something more. Videography is the next
+                step. I’m truly inspired by the people and world around me, so I
+                view everyday as an opportunity to take an amazing photo or
+                shoot an amazing and emotional video.
               </p>
             </div>
           </div>
