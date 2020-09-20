@@ -5,12 +5,13 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
     description: `Jtography Portfolio`,
-    siteUrl: 'https://gifted-murdock-5495de.netlify.com/',
+    siteUrl: 'https://jtographymedia.com/',
     author: `Grant Best`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     `gatsby-plugin-netlify`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Img from 'react-cool-img';
 
 import Tilt from 'react-tilt';
 import Fade from 'react-reveal/Fade';
@@ -36,7 +37,7 @@ const Card = props => {
             <div className="card">
               <article className="item">
                 <a href="/#" className="image fit">
-                  <img src={props.img} alt="" />
+                  <Img src={props.img} alt="" />
                 </a>
                 <header>
                   <h3>{props.category || 'Category'}</h3>
