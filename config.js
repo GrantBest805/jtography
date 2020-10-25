@@ -19,7 +19,7 @@ module.exports = {
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:jimmyvega33@gmail.com',
+      url: 'mailto:jtographymedia@gmail.com',
     },
   ],
 };
