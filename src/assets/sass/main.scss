@@ -17,30 +17,22 @@
 
 // Breakpoints.
 
-@include breakpoints(
-  (
-    wide: (
-      961px,
+@include breakpoints((wide: (961px,
       1880px,
     ),
-    normal: (
-      961px,
+    normal: (961px,
       1620px,
     ),
-    narrow: (
-      961px,
+    narrow: (961px,
       1320px,
     ),
-    narrower: (
-      737px,
+    narrower: (737px,
       960px,
     ),
-    mobile: (
-      null,
+    mobile: (null,
       736px,
     ),
-  )
-);
+  ));
 
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
@@ -220,6 +212,7 @@ body {
 
   // Stops initial animations until page loads.
   &.is-preload {
+
     *,
     *:before,
     *:after {
@@ -300,7 +293,7 @@ h3 {
 header {
   margin: 0 0 2em 0;
 
-  > p {
+  >p {
     margin: 1em 0 0 0;
   }
 }
@@ -324,10 +317,8 @@ a {
   text-decoration: none;
   color: inherit;
   border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
-  @include vendor(
-    'transition',
-    ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out')
-  );
+  @include vendor('transition',
+    ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
   outline: 0;
 
   &:hover {
@@ -432,12 +423,12 @@ article {
   // margin-bottom: 3em;
 
   > :last-child,
-  > .container,
+  >.container,
   &:last-child {
     margin-bottom: 1;
   }
 
-  .row > & {
+  .row>& {
     margin-bottom: 0;
   }
 }
@@ -670,13 +661,10 @@ button,
   background-color: #8ebebc;
   border: 0;
   cursor: pointer;
-  @include vendor(
-    'background-image',
-    (
-      'linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))',
+  @include vendor('background-image',
+    ('linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))',
       'url("../images/overlay.png")'
-    )
-  );
+    ));
   @include vendor('transition', 'background-color 0.35s ease-in-out');
 
   &:hover {
@@ -723,7 +711,7 @@ button,
     -moz-osx-font-smoothing: grayscale;
   }
 
-  > .label {
+  >.label {
     display: none;
   }
 }
@@ -888,7 +876,7 @@ button,
 #main {
   margin-left: 375px;
 
-  > section {
+  >section {
     margin: 0;
     overflow: hidden;
     padding: 4em 0;
@@ -989,7 +977,7 @@ button,
   /* Main */
 
   #main {
-    > section {
+    >section {
       padding: 3em 0;
     }
 
@@ -1250,7 +1238,7 @@ button,
     padding-bottom: 1px;
     margin-left: 0;
 
-    > section {
+    >section {
       padding: 3em 0;
     }
 
@@ -1296,7 +1284,7 @@ button,
   /* Main */
 
   #main {
-    > section {
+    >section {
       padding: 2em 0;
     }
 
@@ -1390,6 +1378,7 @@ button,
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -1422,6 +1411,10 @@ button,
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
   opacity: 0.8;
+}
+
+.img-wrap:hover {
+  cursor: pointer;
 }
 
 .img-wrap img {
