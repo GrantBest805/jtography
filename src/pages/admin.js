@@ -1,12 +1,7 @@
 import React from 'react';
-import ImageUpload from '../admin/components/ImageUpload';
 
 const Admin = () => {
-  return (
-    <div>
-      <ImageUpload />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Admin;

@@ -6,19 +6,14 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/Sidebar/Index';
 import { FaArrowDown } from 'react-icons/fa';
-import Card from '../components/shared/Card';
 import ContactForm from '../components/shared/ContactForm';
 
-import spurs from '../assets/images/spurs.jpg';
-import unionP from '../assets/images/unionP.jpg';
-import nightCity from '../assets/images/night-city.jpg';
-import dog from '../assets/images/dog-ocean.jpg';
-import yFlower from '../assets/images/yellow-flower.jpg';
-import bridge1 from '../assets/images/bridge1.jpg';
 import pic8 from '../assets/images/jimmy1.png';
 import Scroll from '../components/Scroll';
 
 import { SideBarContext } from '../context/sidebarContext';
+import ImageGrid from '../components/ImageGrid';
+import Modal from '../components/shared/Modal';
 
 const sections = [
   { id: 'top', name: 'Intro', icon: 'fa-home' },
@@ -29,6 +24,7 @@ const sections = [
 
 const IndexPage = () => {
   const [isHeaderOpen, toggleHeader] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const setToggleHeader = useCallback(() => {
     toggleHeader(!isHeaderOpen);
@@ -56,7 +52,6 @@ const IndexPage = () => {
                   Photography & Video Production
                 </span>
               </h2>
-              {/* <p className="heading-primary-sub">Check Out My Recent Work!</p> */}
             </header>
 
             <footer>
@@ -83,22 +78,13 @@ const IndexPage = () => {
               free to contact me for further pricing and details.
             </p>
 
-            <div className="row">
-              <div className="col-4 col-12-mobile">
-                <Card category="Outdoors" img={spurs} />
-                <Card category="Portraits" img={unionP} />
-              </div>
-
-              <div className="col-4 col-12-mobile">
-                <Card category="Videos" img={nightCity} delay={300} />
-                <Card category="something" img={dog} delay={300} />
-              </div>
-
-              <div className="col-4 col-12-mobile">
-                <Card category="------" img={yFlower} delay={600} />
-                <Card category="------" img={bridge1} delay={600} />
-              </div>
-            </div>
+            <ImageGrid setSelectedImage={setSelectedImage} />
+            {selectedImage && (
+              <Modal
+                selectedImage={selectedImage}
+                setSelectedImage={setSelectedImage}
+              />
+            )}
           </div>
         </section>
 
@@ -109,7 +95,7 @@ const IndexPage = () => {
             </header>
             <div className="about-me">
               <a href="/#" className="image featured">
-                <img src={pic8} alt="" />
+                <img className="default-img" src={pic8} alt="" />
               </a>
               <p style={{ display: 'block' }}>
                 You could classify me as a “big picture” kinda guy...pun
